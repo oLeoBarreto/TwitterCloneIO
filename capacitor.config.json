@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "TwitterClone",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

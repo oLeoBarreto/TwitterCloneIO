@@ -1,0 +1,7 @@
+{
+  "name": "TwitterClone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
