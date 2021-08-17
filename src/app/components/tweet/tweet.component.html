@@ -1,3 +1,28 @@
-<p>
-  tweet works!
-</p>
+<ion-row class="wrapper">
+
+  <ion-col size="2">
+    <ion-avatar>
+      <ion-img [src]="tweet.img"></ion-img>
+    </ion-avatar>
+  </ion-col>
+  <ion-col size="10">
+    <ion-row class="tweetInfo">
+      <ion-col size="12">
+        <span class="username">{{ tweet.username }}</span>
+        <span class="handle">@{{ tweet.handle }}</span>
+        <span class="handle">- {{ tweet.date*1000 | date: 'shortDate' }} </span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <div [innerHtml]="tweet.text"></div>
+        <img class="previewImg" [src]="tweet.attachment" *ngIf="tweet.attachment">
+      </ion-col>
+    </ion-row>
+  </ion-col>
+
+  <ion-row class="ion-justfy-content-start">
+    <ion-col></ion-col>
+  </ion-row>
+</ion-row>
